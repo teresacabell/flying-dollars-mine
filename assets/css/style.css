@@ -1,0 +1,139 @@
+/* * {
+    background-color: gray;
+} */
+
+.header {
+    background-color: #20bf55;
+    background: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+    color: Black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 12px;
+    margin: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.navbar {
+    background-color: #20bf55;
+    background: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+    color: Black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 12px;
+    margin: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.search {
+    flex-wrap: wrap;
+    flex: auto;
+    background-color: #20bf55;
+    background: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+    padding: 10px;
+    border-radius: 12px;
+    width: 17%;
+    height: auto;
+    margin: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.search-form {
+    border-radius: 5px;
+    padding: 2px;
+    height: auto;
+    width: 100%;
+}
+
+.card {
+    background-color: #20bf55;
+    background: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+    text-align: center;
+    flex-direction: row;
+    display: flex;
+}
+
+#search-button {
+    background-color: #01baef;
+    cursor: pointer;
+    border-radius: 5px; 
+}
+
+#search-button:hover {
+    background-color: #20bf55;
+    background: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+} 
+
+.navbar-item {
+    background-color: #01baef;
+}
+
+.dailyContainer {
+    border: solid black 2px;
+    padding: 5px;
+}
+
+.cityContainer{
+    /* border: solid black 2px; */
+    padding: 5px;
+    background-color: #20bf55;
+    background: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+    margin: 10px;
+    height: auto;
+    width: 17%;
+    border-radius: 12px;
+}
+
+.forecast {
+    justify-content: center;
+    color: black;
+    background-color: #20bf55;
+    background: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+    margin: 15px;
+    border-radius: 12px;
+}
+
+.forecastH2 {
+    margin: 15px;
+    padding: 7px;
+}
+
+.currency {
+    border-radius: 12px;
+    color: black;
+    justify-content: center;
+    background-color: #20bf55;
+    background: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+    margin: 15px;
+}
+
+.currencyH2 {
+    margin: 10px;
+    padding: 7px;
+}
+
+.currencyAmount {
+    border-radius: 5px;
+    padding: 2px;
+    margin: 15px;
+}
+
+.form-control {
+    border-radius: 5px;
+    padding: 2px;
+    margin: 15px;
+}
+
+.convertButton {
+    background-color: #01baef;
+    cursor: pointer;
+    border-radius: 5px; 
+}
+
+#convertButton:hover {
+    background-color: #20bf55;
+    background: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+}
+
+.saved-currency {
+    margin: 15px;
+    padding: 2px;
+}
