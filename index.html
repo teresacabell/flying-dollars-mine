@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./about.html">
+    <title>Flying Dollars</title>
+</head>
+<body>
+    <header id="header" class="header">
+        <h1>Flying Dollar$</h1>
+        <p>Welcome to Flying Dollars, where we take your money to convert it to another currency all without the hassle of talking to someone.</p>
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://bulma.io">
+          </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a href="./index.html" class="navbar-item"> Home </a>
+
+
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link"> More </a>
+
+              <div class="navbar-dropdown">
+                <a href="./about.html" target="_blank" class="navbar-item"> About </a>
+                <hr class="navbar-divider" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <br>
+    <div id="search" class="search">
+        <div>
+            <h2>Search:</h2>
+            <form action="">
+                <input id="search-form" class="search-form" type="text" placeholder="Search for City">
+                <button id="search-button" type="button">Search</button>
+            </form>
+        </div>
+        <div id="past-cities-container">
+            <ul class="past-cities"></ul>
+        </div>
+    </div>
+    <!-- Where the current weather will show up -->
+    <div class="cityContainer" id="cityContainer">Current Weather</div>
+    <div id="forecast" class="forecast">
+      <!-- Card for header -->
+      <div class="week-forecast">
+        <h2 class="forecastH2">5 Day Forecast:</h2>
+      </div>
+    </div>
+    <br>
+    <div id="currency" class="currency">
+        <!-- Card for header -->
+        <div class="card-exchange">
+            <h2 class="currencyH2">Currency Exchange Rate:</h2>
+                <div >
+                <input class="currencyAmount" placeholder="0.00" id="currencyAmount" type="number">
+                </div>
+                    <select class="form-control from" id="sel1">
+                        <option value="">Select One …</option>
+                        <option value="USD">USD</option>
+                        <option value="AED">AED</option>
+                        <option value="ARS">ARS</option>
+                        <option value="AUD">AUD</option>
+                        <option value="BGN">BGN</option>
+                        <option value="BRL">BRL</option>
+                        <option value="BSD">BSD</option>
+                        <option value="CAD">CAD</option>
+                        <option value="CHF">CHF</option>
+                        <option value="CLP">CLP</option>
+                        <option value="CNY">CNY</option>
+                        <option value="COP">COP</option>
+                        <option value="CZK">CZK</option>
+                        <option value="DKK">DKK</option>
+                        <option value="DOP">DOP</option>
+                        <option value="EGP">EGP</option>
+                        <option value="EUR">EUR</option>
+                        <option value="FJD">FJD</option>
+                        <option value="GBP">GBP</option>
+                        <option value="GTQ">GTQ</option>
+                        <option value="HKD">HKD</option>
+                        <option value="HRK">HRK</option>
+                        <option value="HUF">HUF</option>
+                        <option value="IDR">IDR</option>
+                        <option value="ILS">ILS</option>
+                        <option value="INR">INR</option>
+                        <option value="ISK">ISK</option>
+                        <option value="JPY">JPY</option>
+                        <option value="KRW">KRW</option>
+                        <option value="KZT">KZT</option>
+                        <option value="MVR">MVR</option>
+                        <option value="MXN">MXN</option>
+                        <option value="MYR">MYR</option>
+                        <option value="NOK">NOK</option>
+                        <option value="NZD">NZD</option>
+                        <option value="PAB">PAB</option>
+                        <option value="PEN">PEN</option>
+                        <option value="PHP">PHP</option>
+                        <option value="PKR">PKR</option>
+                        <option value="PLN">PLN</option>
+                        <option value="PYG">PYG</option>
+                        <option value="RON">RON</option>
+                        <option value="RUB">RUB</option>
+                        <option value="SAR">SAR</option>
+                        <option value="SEK">SEK</option>
+                        <option value="SGD">SGD</option>
+                        <option value="THB">THB</option>
+                        <option value="TRY">TRY</option>
+                        <option value="TWD">TWD</option>
+                        <option value="UAH">UAH</option>
+                        <option value="UYU">UYU</option>
+                        <option value="ZAR">ZAR</option>
+                    </select>
+            <br>
+            <br>
+                <select class="form-control to" id="sel2">
+                    <option value="">Select One …</option>
+                    <option value="USD">USD</option>
+                    <option value="AED">AED</option>
+                    <option value="ARS">ARS</option>
+                    <option value="AUD">AUD</option>
+                    <option value="BGN">BGN</option>
+                    <option value="BRL">BRL</option>
+                    <option value="BSD">BSD</option>
+                    <option value="CAD">CAD</option>
+                    <option value="CHF">CHF</option>
+                    <option value="CLP">CLP</option>
+                    <option value="CNY">CNY</option>
+                    <option value="COP">COP</option>
+                    <option value="CZK">CZK</option>
+                    <option value="DKK">DKK</option>
+                    <option value="DOP">DOP</option>
+                    <option value="EGP">EGP</option>
+                    <option value="EUR">EUR</option>
+                    <option value="FJD">FJD</option>
+                    <option value="GBP">GBP</option>
+                    <option value="GTQ">GTQ</option>
+                    <option value="HKD">HKD</option>
+                    <option value="HRK">HRK</option>
+                    <option value="HUF">HUF</option>
+                    <option value="IDR">IDR</option>
+                    <option value="ILS">ILS</option>
+                    <option value="INR">INR</option>
+                    <option value="ISK">ISK</option>
+                    <option value="JPY">JPY</option>
+                    <option value="KRW">KRW</option>
+                    <option value="KZT">KZT</option>
+                    <option value="MVR">MVR</option>
+                    <option value="MXN">MXN</option>
+                    <option value="MYR">MYR</option>
+                    <option value="NOK">NOK</option>
+                    <option value="NZD">NZD</option>
+                    <option value="PAB">PAB</option>
+                    <option value="PEN">PEN</option>
+                    <option value="PHP">PHP</option>
+                    <option value="PKR">PKR</option>
+                    <option value="PLN">PLN</option>
+                    <option value="PYG">PYG</option>
+                    <option value="RON">RON</option>
+                    <option value="RUB">RUB</option>
+                    <option value="SAR">SAR</option>
+                    <option value="SEK">SEK</option>
+                    <option value="SGD">SGD</option>
+                    <option value="THB">THB</option>
+                    <option value="TRY">TRY</option>
+                    <option value="TWD">TWD</option>
+                    <option value="UAH">UAH</option>
+                    <option value="UYU">UYU</option>
+                    <option value="ZAR">ZAR</option>
+                </select>
+                <button class="convertButton" id="convertButton">Convert</button>
+        </div>
+        <div class="saved-currency" id="saved-currency"></div>
+    </div>
+    <br>
+<!-- <div id="forecast" class="forecast">
+        <!-- Card for header -->
+        <!-- <div class="week-forecast">
+            <h2 class="forecastH2">5 Day Forecast:</h2>
+        </div> -->
+</div> 
+<script src="./assets/js/script.js"></script>
+</body>
+</html>
